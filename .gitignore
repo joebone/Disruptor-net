@@ -20,6 +20,7 @@
 *.sdf
 *.opensdf
 *.unsuccessfulbuild
+*.orig
 ipch/
 obj/
 [Bb]in
@@ -31,18 +32,16 @@ Ankh.NoLoad
 _ReSharper*/
 *.resharper
 [Tt]est[Rr]esult*
+.vs/*
+src/.vs/*
+BenchmarkDotNet.Artifacts/
 
-#Project files
-[Bb]uild/
-
-#Subversion files
-.svn
-
-# Office Temp Files
-~$*
-
-#NuGet
-packages/
-
-#Target build folder
-Target/
+#ncrunch
+*.ncrunchsolution
+*.ncrunchproject
+build/tools/**
+output/**
+src/packages/**
+launchSettings.json
+src/Disruptor.PerfTests/Properties/launchSettings.json
+/src/.idea
